@@ -35,4 +35,5 @@ def checkup_msg(msg):
             break
     return [tg, vb]
 
-checkup_msg('エアコンつける')
+#checkup_msg('エアコン点けて')     # こんな感じで使用
+#> 'エアコン', 'つける'
