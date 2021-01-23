@@ -1,7 +1,7 @@
 import discord
 import msgcheck                         # msgcheck.py 簡単な言語認識を行う
 
-# -- 事前に irrp.py を手に入れ，赤外線信号のデータを./code に保存しておく --
+# -- 事前に irrp.py を手に入れ，赤外線信号のデータを./codes に保存しておく --
 
 TOKEN = 'yourtoken'                     # botのアクセストークン
 client = discord.Client()               # discord のインスタンス
