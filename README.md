@@ -5,3 +5,5 @@ discord からのメッセージで，Raspberry Pi から赤外線リモコン�
 discord の bot 作成：https://discordapp.com/developers/applications/
 
 discord.py: https://discordpy.readthedocs.io/en/latest/intro.html
+
+irrp.py: http://abyz.me.uk/rpi/pigpio/examples.html#Python_irrp_py
