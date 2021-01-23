@@ -13,5 +13,6 @@ venv を使うときは仮想環境側でこれが必要<br>
 <br>
 irrp.py: http://abyz.me.uk/rpi/pigpio/examples.html#Python_irrp_py<br>
 <br>
+<br>
 温湿度，気圧は以下のものを使用(SPI)。<br>
 https://akizukidenshi.com/catalog/g/gK-09421/<br>
