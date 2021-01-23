@@ -1,6 +1,7 @@
 import discord
 import msgcheck                         # msgcheck.py 簡単な言語認識を行う
 
+# -- 事前に irrp.py を手に入れ，赤外線信号のデータを./code に保存しておく --
 
 TOKEN = 'yourtoken'                     # botのアクセストークン
 client = discord.Client()               # discord のインスタンス
@@ -24,8 +25,10 @@ async def on_message(message):
     # メッセージごとに処理を行う
     if target == 'エアコン':
         if verb == 'つける':
+            subprocess.call(['python3', 'irrp.py', '-p', '-g17', '-f', 'codes', "aircon:on"])
             await message.channel.send('エアコンを点けました。')
         elif verb == 'けす':
+            subprocess.call(['python3', 'irrp.py', '-p', '-g17', '-f', 'codes', "aircon:off"])
             await message.channel.send('エアコンを消しました。')
         else:
             await message.channel.send('理解できません。')
