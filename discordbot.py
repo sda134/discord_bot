@@ -2,7 +2,7 @@ import discord
 import msgcheck
 
 
-TOKEN = 'ODAwMjI0NDUyODkzNjA1OTM5.YAPBGQ.LBqU1OxmLhPz7HhkCaLhzxDmtLg'   # botのアクセストークン
+TOKEN = 'yourtoken'                     # botのアクセストークン
 client = discord.Client()               # discord のインスタンス
 
 
