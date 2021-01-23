@@ -1,5 +1,5 @@
 import discord
-import msgcheck
+import msgcheck                         # msgcheck.py 簡単な言語認識を行う
 
 
 TOKEN = 'yourtoken'                     # botのアクセストークン
