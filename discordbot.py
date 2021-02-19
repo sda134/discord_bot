@@ -6,8 +6,8 @@ import discord
 import msgcheck
 from bme280 import Bme280, Bme280Mode
 
-TOKEN = 'your token'   # botのアクセストークン
-client = discord.Client()               # discord のインスタンス
+TOKEN = 'your token'                # botのアクセストークン
+client = discord.Client()           # discord のインスタンス
 
 def get_bme_data():
     #Bme280 setup
