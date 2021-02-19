@@ -1,6 +1,6 @@
 # discord_bot
 
-discord からのメッセージで，Raspberry Pi から赤外線リモコンの信号を送信します。（開発途中）<br>
+discord からのメッセージで，Raspberry Pi から赤外線リモコンの信号を送信します。<br>
 discord の bot 作成：https://discordapp.com/developers/<br>
 discord.py: https://discordpy.readthedocs.io/en/latest/intro.html<br>
 <br>
