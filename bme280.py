@@ -15,6 +15,9 @@ class Bme280Mode(IntEnum):
 class Bme280(): 
 	def __init__(self):
 		self.mode = Bme280Mode.SLEEP
+		self.t_sb = 0b000
+		self.filter = 0b001
+		self.spi3w_en = 0
 		self.osrs_t = 0b001
 		self.osrs_p = 0b001
 		self.osrs_h = 0b001
@@ -32,9 +35,10 @@ class Bme280():
 		self._spi.max_speed_hz = 100000
 
 		# setup
+		config = (self.t_sb << 5) | (self.filter << 2) | self.spi3w_en
 		ctrl_meas = (self.osrs_t << 5) | (self.osrs_p << 2) | self.mode
-		ctrl_hum = self.osrs_h		
-		self._spi.xfer([0x74,ctrl_meas, 0x72,ctrl_hum])	# addr 0xF4 addr 0xF2
+		ctrl_hum = self.osrs_h
+		self._spi.xfer([0x75,config, 0x74,ctrl_meas, 0x72,ctrl_hum])	# addr 0xF5 addr 0xF4 addr 0xF2
 
 		# get calibration data
 		self._get_calib_param()
